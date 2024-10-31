@@ -9,9 +9,9 @@ function MakeKeyboard(props) {
     }
     return (
         <>
-            <div>{props.text} </div>
+            <div >{props.text} </div>
             <div>
-                {props.arrayLetters.map((letter, index) => <button onClick={() => clickLetter(index)}> {letter} </button>)}
+                {props.arrayLetters.map((letter, index) => <button key={index} onClick={() => clickLetter(index)}> {letter} </button>)}
             </div>
         </>
     );
